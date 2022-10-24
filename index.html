@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostoslista</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="box">
+    <div id="myDIV" class="header">
+        <h1 style="margin:5px">Ostoslista</h1>
+        <p style="margin:10px">Muista nämä kun menet ostoksille!</p>
+        <input type="text" id="myInput" placeholder="Tuote...">
+        <span onclick="addButton()" class="addBtn">Lisää</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Maito</li>
+        <li>Leipä</li>
+        <li>Kananmunia</li>
+        <li>Tomaatti</li>
+        <li>Kurkku</li>
+        <li>Jugurtti</li>
+      </ul>
+    <script src="script.js"></script>
+    <footer id="myFooter" class="footer">
+        <span onclick="selectAllBtn()" class="allBtn">Kaikki</span>
+        <span onclick="selectActiveBtn()" class="activeBtn">Hakematta</span>
+        <span onclick="selectCompletedBtn()" class="completedBtn">Noudetut</span>
+    </footer>
+    </div>
+</body>
+</html>
